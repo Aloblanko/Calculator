@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="resultArea">0</div>
+
+    <table>
+      <tr>
+        <td class="highlight" onclick="calculate('sqrt')">√</td>
+        <td class="highlight" onclick="calculate('percentage')">%</td>
+        <td class="highlight" onclick="calculator.clearResult()">AC</td>
+        <td class="highlight" onclick="calculate('÷')">÷</td>
+      </tr>
+      <tr>
+        <td onclick="appendToResult('7')">7</td>
+        <td onclick="appendToResult('8')">8</td>
+        <td onclick="appendToResult('9')">9</td>
+        <td class="highlight" onclick="calculate('*')">x</td>
+      </tr>
+      <tr>
+        <td onclick="appendToResult('4')">4</td>
+        <td onclick="appendToResult('5')">5</td>
+        <td onclick="appendToResult('6')">6</td>
+        <td class="highlight" onclick="calculate('-')">-</td>
+      </tr>
+      <tr>
+        <td onclick="appendToResult('1')">1</td>
+        <td onclick="appendToResult('2')">2</td>
+        <td onclick="appendToResult('3')">3</td>
+        <td class="highlight" onclick="calculator.calculate('+')">+</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td onclick="appendToResult('0')">0</td>
+        <td onclick="appendToResult('.')">,</td>
+        <td id="result" class="highlight" onclick="calculate('=')">=</td>
+      </tr>
+    </table>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
